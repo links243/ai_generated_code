@@ -4,7 +4,15 @@ const routes = [
   {
     path: '/', 
     name: 'Root',
-    component: () => import('../views/index.vue')
+    redirect: '/home',
+    component: () => import('../views/Layout/index.vue'),
+    children: [
+      {
+        path: '/chat/:uuid?',
+        name: 'Chat',
+        component: () => import('@/views/Chat/index.vue'),
+      },
+    ],
   }
 ]
 
