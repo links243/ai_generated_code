@@ -4,7 +4,7 @@ const routes = [
   {
     path: '/', 
     name: 'Root',
-    redirect: '/home',
+    redirect: '/chat',
     component: () => import('../views/Layout/index.vue'),
     children: [
       {
@@ -13,7 +13,12 @@ const routes = [
         component: () => import('@/views/Chat/index.vue'),
       },
     ],
-  }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'notFound',
+    redirect: '/404',
+  },
 ]
 
 const router = createRouter({

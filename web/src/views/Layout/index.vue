@@ -1,12 +1,13 @@
 <template>
-  <div class=""></div>
+  <header-component></header-component>
 </template>
 
 <script setup>
 import { ref, reactive } from 'vue'
+import HeaderComponent from './HeaderComponent/index.vue'
 
 </script>
 
-<style lang='scss' scoped>
+<style lang='less' scoped>
 
 </style>
