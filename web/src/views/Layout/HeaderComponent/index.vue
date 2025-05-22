@@ -3,6 +3,7 @@
     <div class="left">
       <div class="sider-btn">
         <expand></expand>
+        <span class="title">AI generated code</span>
       </div>
     </div>
     <div class="right">
@@ -32,6 +33,7 @@ const toggleDark = useToggle(isDark)
 
 <style lang="scss" scoped>
 .top-bar {
+  z-index: 99;
   height: 52px;
   width: 100%;
   background-color: var(--bg-color);
