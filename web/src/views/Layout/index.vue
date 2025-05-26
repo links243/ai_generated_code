@@ -1,13 +1,18 @@
 <template>
-  <header-component></header-component>
+  <div class="layout h-screen">
+    <header-component></header-component>
+    <div class="h-full">
+      <Sidebar></Sidebar>
+    </div>
+  </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, reactive } from 'vue'
 import HeaderComponent from './HeaderComponent/index.vue'
+import Sidebar from './Sidebar/index.vue'
 
 </script>
 
-<style lang='less' scoped>
-
+<style lang='scss' scoped>
 </style>

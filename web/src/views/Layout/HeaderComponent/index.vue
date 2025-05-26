@@ -2,7 +2,7 @@
   <div class="top-bar">
     <div class="left">
       <div class="sider-btn">
-        <expand></expand>
+        <expand class="inline"></expand>
         <span class="title">AI generated code</span>
       </div>
     </div>
