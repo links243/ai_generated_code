@@ -1,7 +1,7 @@
 <template>
-  <div class="layout h-screen">
+  <div class="layout h-screen flex flex-col">
     <header-component></header-component>
-    <div class="h-full">
+    <div class="h-full flex-1 overflow-x-hidden">
       <Sidebar></Sidebar>
     </div>
   </div>
